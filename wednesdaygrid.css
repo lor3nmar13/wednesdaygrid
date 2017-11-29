@@ -1,0 +1,47 @@
+body {
+    margin:0px;
+}
+
+#wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+#one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: grey;
+    grid-row-start: 1;
+    grid-row-end: 3
+}
+
+#two {
+    background:blue;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#three {
+    background: purple;
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+#row {
+    display: flex;
+    flex-flow: row;
+
+}
+
+#row :nth-child(odd) {
+    background:brown;
+    height: 100px;
+    width: 187px;
+}
+
+#row :nth-child(even) {
+    background:violet;
+    height: 100px;
+    width: 200px;
+}
